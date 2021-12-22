@@ -5,7 +5,7 @@ from Scrape import *
 import datetime
 
 from PIL import Image
-
+import corpora
 #Page Config
 st.set_page_config(page_title="ITSA")
 st.markdown("# Interactive Text Sentiment Analysis System")
