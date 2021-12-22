@@ -1,0 +1,4 @@
+plotly
+textblob
+PIL
+git+https://github.com/JustAnotherArchivist/snscrape.git
