@@ -1,3 +1,4 @@
 plotly
 git+https://github.com/JustAnotherArchivist/snscrape.git
 Pillow
+textblob
