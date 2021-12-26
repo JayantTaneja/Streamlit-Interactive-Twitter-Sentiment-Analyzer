@@ -47,7 +47,7 @@ if show_page=="Welcome":
 
 elif show_page=="Type In Prompt":
 
-    image = Image.open("Photos\photo-1529236183275-4fdcf2bc987e.jpeg")
+    image = Image.open("Photos/photo-1529236183275-4fdcf2bc987e.jpeg")
     st.image(image)
 
     st.markdown("### Evaluate Your Custom Text")
@@ -76,7 +76,7 @@ elif show_page=="Type In Prompt":
 
 else:
 
-    image = Image.open('Photos\sdfsf.png')
+    image = Image.open('Photos/sdfsf.png')
     st.image(image)
 
     st.markdown("### Evaluate Twitter Fetched Text")
