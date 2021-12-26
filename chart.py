@@ -49,3 +49,15 @@ def tweetChart(positive, negative, neutral):
     
     #Plot Fig
     st.plotly_chart(fig)
+
+def tweet_pie(positive, negative, neutral):
+    data = {
+        "polarity": pd.Series([positive, negative, neutral], index=["positive", "negative", "neutral"]),
+    }
+    data = pd.DataFrame(data)
+
+    fig = px.pie(data, values='polarity', names=data.index, color=data.index,
+                color_discrete_map={'positive':'#42f598',
+                                    'negative':'#fa7066',
+                                    'neutral':'#16d3f5'})
+    st.plotly_chart(fig)

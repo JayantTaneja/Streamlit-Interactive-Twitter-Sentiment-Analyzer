@@ -174,8 +174,11 @@ def tweetSentiment(tweet_df):
     for i in tweet_df["Subjectivity"]:
         subjectivity_list.append(i)
     
+    st.markdown("### Tweet Distribution")
     tweetChart(positive, negative, neutral)
-        
+    st.markdown("### Tweet propotions")
+    tweet_pie(positive, negative, neutral)
+
     #Statistics
     avg_pol, avg_subj = show_stats2(positive, negative, polarity_list, subjectivity_list)
     
