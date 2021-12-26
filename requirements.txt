@@ -1,4 +1,3 @@
 plotly
 git+https://github.com/JustAnotherArchivist/snscrape.git
 Pillow
-python -m textblob.download_corpora
