@@ -39,10 +39,6 @@ if show_page=="Welcome":
             - 1 being completely subjective 
         - ###### As with all machine learning systems, it will not be 100% accurate and might have biases
         ---
-        ##### Made By
-        [![JayantTaneja](https://img.shields.io/static/v1?label=Jayant%20Taneja&message=ViewProfile&color=blue&logo=github)](https://github.com/JayantTaneja/)
-        
-        [![JayantTaneja](https://img.shields.io/static/v1?label=Jayant%20Taneja&message=ViewProfile&color=blue&logo=Linkedin)](https://www.linkedin.com/in/jayant-taneja/)
     '''
 
 elif show_page=="Type In Prompt":
