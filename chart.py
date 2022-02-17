@@ -26,13 +26,24 @@ def chart(po, su):
             },
             color_discrete_sequence=[c1,"#16d3f5"]
         )
-        
+        fig.update_layout(legend=dict(
+            orientation="v",
+            yanchor="bottom",
+            y=-0.7,
+            xanchor="left",
+            x=0.01
+            ))
+          
         #Plot Fig
-        st.plotly_chart(fig)
+        st.plotly_chart(fig, use_container_width=True)
 
 def tweetChart(positive, negative, neutral):
     data = pd.DataFrame(
-            [[positive,0, 0],[0,negative, 0], [0, 0, neutral]],
+            [
+                [positive,0, 0],
+                [0,negative, 0], 
+                [0, 0, neutral]
+            ],
             index = ["Positive", "Negative", "Neutral"],
             columns = ["No Of Positive Tweets", "No Of Negative Tweets", "No Of Neutral Tweets"]
         )
@@ -46,9 +57,15 @@ def tweetChart(positive, negative, neutral):
         },
         color_discrete_sequence=["#42f598", "#fa7066", "#16d3f5"]
     )
-    
+    fig.update_layout(legend=dict(
+            orientation="v",
+            yanchor="bottom",
+            y=-0.7,
+            xanchor="left",
+            x=0.01
+            ))
     #Plot Fig
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
 def tweet_pie(positive, negative, neutral):
     data = {
@@ -60,4 +77,11 @@ def tweet_pie(positive, negative, neutral):
                 color_discrete_map={'positive':'#42f598',
                                     'negative':'#fa7066',
                                     'neutral':'#16d3f5'})
-    st.plotly_chart(fig)
+    fig.update_layout(legend=dict(
+            orientation="v",
+            yanchor="bottom",
+            y=-0.7,
+            xanchor="left",
+            x=0.01
+            ))
+    st.plotly_chart(fig, use_container_width=True)
