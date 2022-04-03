@@ -2,3 +2,4 @@ plotly
 git+https://github.com/JustAnotherArchivist/snscrape.git
 Pillow
 textblob
+click==7.1.2
